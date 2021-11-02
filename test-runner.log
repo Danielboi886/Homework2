@@ -1596,3 +1596,329 @@ Ran all test suites matching /ex4-observable.test.js/i.
           at Array.forEach (<anonymous>)
 
 
+2021-11-02 11:13:09 info: ---------------------------------------
+2021-11-02 11:13:09 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2021-11-02 11:13:09 info: ---------------------------------------
+2021-11-02 11:13:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    × should be syntactically valid (86 ms)
+    × the body font-family should be `Arial, sans-serif` (4 ms)
+    × each <li> should have the CSS class `list-item`
+    × each <li> should rendered red
+
+  ● Generated HTML › should be syntactically valid
+
+    ENOENT: no such file or directory, open 'C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\it\ex2-aboutMe\index.html'
+
+
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    ENOENT: no such file or directory, open 'C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\it\ex2-aboutMe\index.html'
+
+
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    TypeError: Cannot read properties of undefined (reading 'body')
+
+      14 |
+      15 |   test('the body font-family should be `Arial, sans-serif`', () => {
+    > 16 |     const fontFamily = document.body.style.fontFamily;
+         |                                 ^
+      17 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+      18 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      19 |   });
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:16:33)
+
+  ● Generated HTML › each <li> should have the CSS class `list-item`
+
+    ENOENT: no such file or directory, open 'C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\it\ex2-aboutMe\index.html'
+
+
+
+  ● Generated HTML › each <li> should have the CSS class `list-item`
+
+    TypeError: Cannot read properties of undefined (reading 'querySelectorAll')
+
+      20 |
+      21 |   test('each <li> should have the CSS class `list-item`', () => {
+    > 22 |     const nodeList = document.querySelectorAll('li');
+         |                               ^
+      23 |     const classNames = [...nodeList].map((node) => node.className);
+      24 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+      25 |   });
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:22:31)
+
+  ● Generated HTML › each <li> should rendered red
+
+    ENOENT: no such file or directory, open 'C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\it\ex2-aboutMe\index.html'
+
+
+
+  ● Generated HTML › each <li> should rendered red
+
+    TypeError: Cannot read properties of undefined (reading 'querySelectorAll')
+
+      26 |
+      27 |   test('each <li> should rendered red', () => {
+    > 28 |     const nodeList = document.querySelectorAll('li');
+         |                               ^
+      29 |     const colors = [...nodeList].map(
+      30 |       (node) => window.getComputedStyle(node).color
+      31 |     );
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:28:31)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 4 total
+Snapshots:   0 total
+Time:        6.772 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+
+2021-11-02 11:13:24 error: *** Spell Checker Report ***
+
+
+2021-11-02 11:14:34 info: ------------------------------------------
+2021-11-02 11:14:34 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2021-11-02 11:14:34 info: ------------------------------------------
+2021-11-02 11:14:39 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    × should have all TODO comments removed (7 ms)
+    × should set the `src` property (3 ms)
+    × should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should have all TODO comments removed
+
+    ENOENT: no such file or directory, open 'C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\it\ex3-hijackLogo.js'
+
+      53 |   }
+      54 |
+    > 55 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      56 |
+      57 |   if (options.parse) {
+      58 |     try {
+
+      at beforeAllHelper (test-runner/unit-test-helpers.js:55:22)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:13:29)
+
+  ● hijackLogo › should have all TODO comments removed
+
+    TypeError: Cannot read properties of undefined (reading 'includes')
+
+      113 |
+      114 | function checkTodos(source) {
+    > 115 |   expect(source.includes('TODO')).toBeFalsy();
+          |                 ^
+      116 | }
+      117 |
+      118 | module.exports = {
+
+      at checkTodos (test-runner/unit-test-helpers.js:115:17)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:28:55)
+
+  ● hijackLogo › should set the `src` property
+
+    ENOENT: no such file or directory, open 'C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\it\ex3-hijackLogo.js'
+
+      53 |   }
+      54 |
+    > 55 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      56 |
+      57 |   if (options.parse) {
+      58 |     try {
+
+      at beforeAllHelper (test-runner/unit-test-helpers.js:55:22)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:13:29)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    ENOENT: no such file or directory, open 'C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\it\ex3-hijackLogo.js'
+
+      53 |   }
+      54 |
+    > 55 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      56 |
+      57 |   if (options.parse) {
+      58 |     try {
+
+      at beforeAllHelper (test-runner/unit-test-helpers.js:55:22)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:13:29)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        2.242 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+
+2021-11-02 11:14:43 error: *** Spell Checker Report ***
+
+
+2021-11-02 11:14:51 info: Disclaimer turned off
+2021-11-02 11:15:14 info: --------------------------------------------
+2021-11-02 11:15:14 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2021-11-02 11:15:14 info: --------------------------------------------
+2021-11-02 11:15:24 error: *** Unit Test Error Report ***
+
+  console.error
+    Error: Uncaught [TypeError: Cannot read properties of undefined (reading 'mock')]
+        at reportException (C:\Users\Chene\Documents\GitHub\Homework2\node_modules\jsdom\lib\jsdom\living\helpers\runtime-script-errors.js:66:24)
+        at Timeout.task [as _onTimeout] (C:\Users\Chene\Documents\GitHub\Homework2\node_modules\jsdom\lib\jsdom\browser\Window.js:521:9)
+        at listOnTimeout (node:internal/timers:557:17)
+        at processTimers (node:internal/timers:500:7) TypeError: Cannot read properties of undefined (reading 'mock')
+        at C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\unit-tests\ex4-whatsTheTime.test.js:53:32
+        at Timeout.task [as _onTimeout] (C:\Users\Chene\Documents\GitHub\Homework2\node_modules\jsdom\lib\jsdom\browser\Window.js:516:19)
+        at listOnTimeout (node:internal/timers:557:17)
+        at processTimers (node:internal/timers:500:7)
+
+      at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
+      at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:70:28)
+      at Timeout.task [as _onTimeout] (node_modules/jsdom/lib/jsdom/browser/Window.js:521:9)
+
+
+2021-11-02 11:15:28 error: *** Spell Checker Report ***
+
+
+2021-11-02 11:16:07 info: ---------------------------------------
+2021-11-02 11:16:07 info: >>> Running Unit Test `ex5-catWalk` <<<
+2021-11-02 11:16:07 info: ---------------------------------------
+2021-11-02 11:16:14 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js
+  catWalk
+    × HTML should be syntactically valid (79 ms)
+    × should have all TODO comments removed (5 ms)
+    × should use `setInterval()` and/or `setTimeout()` (2 ms)
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    × `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● catWalk › HTML should be syntactically valid
+
+    ENOENT: no such file or directory, open 'C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\it\ex5-catWalk\index.html'
+
+
+
+  ● catWalk › should have all TODO comments removed
+
+    ENOENT: no such file or directory, open 'C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\it\ex5-catWalk\index.html'
+
+
+
+  ● catWalk › should have all TODO comments removed
+
+    TypeError: Cannot read properties of undefined (reading 'includes')
+
+      113 |
+      114 | function checkTodos(source) {
+    > 115 |   expect(source.includes('TODO')).toBeFalsy();
+          |                 ^
+      116 | }
+      117 |
+      118 | module.exports = {
+
+      at checkTodos (test-runner/unit-test-helpers.js:115:17)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:40:55)
+
+  ● catWalk › should use `setInterval()` and/or `setTimeout()`
+
+    ENOENT: no such file or directory, open 'C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\it\ex5-catWalk\index.html'
+
+
+
+  ● catWalk › should use `setInterval()` and/or `setTimeout()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      41 |
+      42 |   test('should use `setInterval()` and/or `setTimeout()`', () => {
+    > 43 |     expect(state.timer).toBeDefined();
+         |                         ^
+      44 |   });
+      45 |
+      46 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:43:25)
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    ENOENT: no such file or directory, open 'C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\it\ex5-catWalk\index.html'
+
+
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      45 |
+      46 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 47 |     expect(state.onload).toBeDefined();
+         |                          ^
+      48 |   });
+      49 |
+      50 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:47:26)
+
+  ● catWalk › `window.onload` or `window.addEventListener` should not call its event handler function
+
+    ENOENT: no such file or directory, open 'C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\it\ex5-catWalk\index.html'
+
+
+
+Test Suites: 1 failed, 1 total
+Tests:       5 failed, 5 total
+Snapshots:   0 total
+Time:        4.629 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+
+2021-11-02 11:16:18 error: *** Spell Checker Report ***
+
+

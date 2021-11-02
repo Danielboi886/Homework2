@@ -1,0 +1,20 @@
+*** Unit Test Error Report ***
+
+  console.error
+    Error: Uncaught [TypeError: Cannot read properties of undefined (reading 'mock')]
+        at reportException (C:\Users\Chene\Documents\GitHub\Homework2\node_modules\jsdom\lib\jsdom\living\helpers\runtime-script-errors.js:66:24)
+        at Timeout.task [as _onTimeout] (C:\Users\Chene\Documents\GitHub\Homework2\node_modules\jsdom\lib\jsdom\browser\Window.js:521:9)
+        at listOnTimeout (node:internal/timers:557:17)
+        at processTimers (node:internal/timers:500:7) TypeError: Cannot read properties of undefined (reading 'mock')
+        at C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\unit-tests\ex4-whatsTheTime.test.js:53:32
+        at Timeout.task [as _onTimeout] (C:\Users\Chene\Documents\GitHub\Homework2\node_modules\jsdom\lib\jsdom\browser\Window.js:516:19)
+        at listOnTimeout (node:internal/timers:557:17)
+        at processTimers (node:internal/timers:500:7)
+
+      at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
+      at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:70:28)
+      at Timeout.task [as _onTimeout] (node_modules/jsdom/lib/jsdom/browser/Window.js:521:9)
+
+
+*** Spell Checker Report ***
+

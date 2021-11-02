@@ -1,0 +1,109 @@
+*** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    × should have all TODO comments removed (7 ms)
+    × should set the `src` property (3 ms)
+    × should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should have all TODO comments removed
+
+    ENOENT: no such file or directory, open 'C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\it\ex3-hijackLogo.js'
+
+      53 |   }
+      54 |
+    > 55 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      56 |
+      57 |   if (options.parse) {
+      58 |     try {
+
+      at beforeAllHelper (test-runner/unit-test-helpers.js:55:22)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:13:29)
+
+  ● hijackLogo › should have all TODO comments removed
+
+    TypeError: Cannot read properties of undefined (reading 'includes')
+
+      113 |
+      114 | function checkTodos(source) {
+    > 115 |   expect(source.includes('TODO')).toBeFalsy();
+          |                 ^
+      116 | }
+      117 |
+      118 | module.exports = {
+
+      at checkTodos (test-runner/unit-test-helpers.js:115:17)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:28:55)
+
+  ● hijackLogo › should set the `src` property
+
+    ENOENT: no such file or directory, open 'C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\it\ex3-hijackLogo.js'
+
+      53 |   }
+      54 |
+    > 55 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      56 |
+      57 |   if (options.parse) {
+      58 |     try {
+
+      at beforeAllHelper (test-runner/unit-test-helpers.js:55:22)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:13:29)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    ENOENT: no such file or directory, open 'C:\Users\Chene\Documents\GitHub\Homework2\2-Browsers\Week1\it\ex3-hijackLogo.js'
+
+      53 |   }
+      54 |
+    > 55 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      56 |
+      57 |   if (options.parse) {
+      58 |     try {
+
+      at beforeAllHelper (test-runner/unit-test-helpers.js:55:22)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:13:29)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        2.242 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+
+*** Spell Checker Report ***
+
