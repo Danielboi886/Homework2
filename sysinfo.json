@@ -1,5 +1,5 @@
 {
-  "node": "v12.16.3",
+  "node": "v17.0.0",
   "system": {
     "manufacturer": "Acer",
     "model": "Swift SF314-51"
@@ -12,15 +12,27 @@
   "memory": "8 GB",
   "osInfo": {
     "platform": "win32",
-    "distro": "Microsoft Windows 10 Pro",
+    "distro": "Microsoft Windows 10 רҵ��",
     "release": "10.0.19043"
   },
   "vscodeInfo": {
-    "version": "1.61.0",
+    "version": "1.61.2",
     "extensions": [
+      "aaron-bond.better-comments",
+      "bierner.github-markdown-preview",
+      "bierner.markdown-checkbox",
+      "bierner.markdown-emoji",
+      "bierner.markdown-preview-github-styles",
+      "bierner.markdown-yaml-preamble",
+      "DavidAnson.vscode-markdownlint",
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
       "esbenp.prettier-vscode",
       "hdg.live-html-previewer",
-      "ritwickdey.LiveServer"
+      "ms-vscode-remote.remote-ssh",
+      "ms-vscode-remote.remote-ssh-edit",
+      "ritwickdey.LiveServer",
+      "streetsidesoftware.code-spell-checker"
     ],
     "userSettings": {
       "[html]": {
@@ -28,7 +40,8 @@
       },
       "editor.formatOnSave": true,
       "terminal.external.windowsExec": "C:\\Program Files\\Git\\git-bash.exe",
-      "terminal.explorerKind": "external"
+      "terminal.explorerKind": "external",
+      "git.enableSmartCommit": true
     }
   }
 }

@@ -7,8 +7,12 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
   second). Use `setInterval()` to make sure the time stays current.
 2. Have the function execute when it's loading in the browser.
 ------------------------------------------------------------------------------*/
+//inspired by the practice at : https://www.w3schools.com/jsref/met_win_setinterval.asp
 function addCurrentTime() {
-  // TODO complete this function
+  const t = new Date();
+  const localTime = t.toLocaleTimeString();
+  document.getElementById('timeWrapper').textContent = localTime;
+  console.log(localTime);
 }
 
-// TODO execute `addCurrentTime` when the browser has completed loading the page
+setInterval(addCurrentTime, 1000);

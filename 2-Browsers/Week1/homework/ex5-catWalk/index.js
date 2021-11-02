@@ -21,8 +21,24 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
-function catWalk() {
-  // TODO complete this function
-}
+// A lot of code snippets are from Khan Academy's class:https://www.khanacademy.org/computing/computer-programming/html-css-js/html-js-dom-animation/pc/challenge-catwalk
+
+const catImg = document.getElementsByTagName('img');
+const cat = catImg[0];
+console.log(cat);
+cat.style.left = `0px`;
+let newDistance = 0;
+let secondsElapsed = 0;
+const startTime = new Date().getTime();
+const walkTheCat = function () {
+  const currTime = new Date().getTime();
+  secondsElapsed = (currTime - startTime) / 1000;
+  newDistance = secondsElapsed * 500;
+  console.log(newDistance);
+  cat.style.left = newDistance + 'px';
+  if (newDistance < outerWidth - cat.width) {
+    window.requestAnimationFrame(walkTheCat)
+};
 
 // TODO execute `catWalk` when the browser has completed loading the page
+walkTheCat();
